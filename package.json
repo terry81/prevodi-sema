@@ -1,0 +1,28 @@
+{
+  "name": "prevodi-sema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "deploy": "npm run build && gh-pages -d _site",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terry81/prevodi-sema.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/terry81/prevodi-sema/issues"
+  },
+  "homepage": "https://terry81.github.io/prevodi-sema",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "gh-pages": "^6.3.0"
+  }
+}

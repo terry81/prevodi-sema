@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build output
+_site/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Editor backups
+*~
+*.bak
+
+# GitHub Pages
+.gh-pages/
+
+# Test files
+test-*.html
+
+# Optional npm lock file (comment out if you want to commit it)
+# package-lock.json
