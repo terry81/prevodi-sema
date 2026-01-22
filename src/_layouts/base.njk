@@ -58,14 +58,21 @@
         </div>
     </footer>
 
-<script>
-    const nav = document.querySelector('.site-navigation');
-    const button = document.querySelector('.menu-toggle');
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('.site-navigation');
+            const button = document.querySelector('.menu-toggle');
 
-    button.addEventListener('click', function() {
-        // This adds/removes the "toggled" class from <nav class="site-navigation">
-        nav.classList.toggle('toggled');
-    });
-</script>
+            if (button) {
+                button.onclick = function() {
+                    nav.classList.toggle('toggled');
+
+                    // Accessibility update
+                    const expanded = nav.classList.contains('toggled');
+                    button.setAttribute('aria-expanded', expanded);
+                };
+            }
+        });
+    </script>
 </body>
 </html>
